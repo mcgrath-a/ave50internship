@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Research Flowchart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+    <div class="container">
+        <h1>Interactive Research Flowchart</h1>
+        <div class="flowchart">
+            <div class="flowchart-node" id="node1">
+                <p>Introduction</p>
+                <button class="continue-btn" data-target="node2" data-arrow="arrow-node1">Continue</button>
+            </div>
+            <div class="arrow hidden" id="arrow-node1"></div>
+            <div class="flowchart-node hidden" id="node2">
+                <p>Point 1</p>
+                <button class="continue-btn" data-target="node3,node4,node5" data-arrow="arrow-node2-1,arrow-node2-2,arrow-node2-3">Continue</button>
+            </div>
+            <div class="arrows hidden" id="arrows-node2">
+                <div class="arrow" id="arrow-node2-1"></div>
+                <div class="arrow" id="arrow-node2-2"></div>
+                <div class="arrow" id="arrow-node2-3"></div>
+            </div>
+            <div class="flowchart-node hidden" id="node3">
+                <p><strong>Idea 1</strong></p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                </ul>
+                <button class="continue-btn" data-target="node6" data-arrow="arrow-node6">Continue</button>
+            </div>
+            <div class="flowchart-node hidden" id="node4">
+                <p><strong>Idea 2</strong></p>
+                <ul>
+                  <li>Ut enim ad minim veniam</li>
+                  <li>Quis nostrud exercitation ullamco</li>
+                </ul>
+                <button class="continue-btn" data-target="node6" data-arrow="arrow-node6">Continue</button>
+            </div>
+            <div class="flowchart-node hidden" id="node5">
+                <p><strong>Idea 3</strong></p>
+                <ul>
+                  <li>Proin eget tortor risus</li>
+                  <li>Curabitur non nulla sit amet</li>
+                </ul>
+                <button class="continue-btn" data-target="node6" data-arrow="arrow-node6">Continue</button>
+            </div>
+            <div class="arrow hidden" id="arrow-node6"></div>
+            <div class="flowchart-node hidden" id="node6">
+                <p>Conclusion</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
