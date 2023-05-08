@@ -18,6 +18,7 @@ h1 {
 }
 p{
     font-family: 'EB Garamond';
+   
 }
 ul{
     font-family: 'EB Garamond';
@@ -48,21 +49,21 @@ p.bold {
         <br>
         <div class="flowchart">
             <div class="flowchart-node" id="node1">
-                <p>Introduction</p>
+                <p style="font-size:26px;font-weight: bold;">Introduction</p>
                 <button class="continue-btn" data-target="node2" data-arrow="arrow-node1">Continue</button>
             </div>
             <div class="arrow hidden" id="arrow-node1"></div>
             <div class="flowchart-node hidden" id="node2">
-                <p>Point 1</p>
-                <button class="continue-btn" data-target="node3,node4,node5" data-arrow="arrow-node2-1,arrow-node2-2,arrow-node2-3">Continue</button>
+                <p style="font-size:26px;font-weight: bold;">Point 1</p>
+                <button class="continue-btn" data-target="node3,node4,node5" data-arrow="arrow-node2">Continue</button>
             </div>
-            <div class="arrows hidden" id="arrows-node2">
+            <div class="arrow hidden" id="arrow-node2">
                 <div class="arrow" id="arrow-node2-1"></div>
                 <div class="arrow" id="arrow-node2-2"></div>
                 <div class="arrow" id="arrow-node2-3"></div>
             </div>
             <div class="flowchart-node hidden" id="node3">
-                <p class="bold">Idea 1</p>
+                <p style="font-size:26px;font-weight: bold;">Idea 1</p>
                 <ul>
                   <li>Lorem ipsum dolor sit amet</li>
                   <li>Consectetur adipiscing elit</li>
@@ -70,7 +71,7 @@ p.bold {
                 <button class="continue-btn" data-target="node6" data-arrow="arrow-node6">Continue</button>
             </div>
             <div class="flowchart-node hidden" id="node4">
-                <p><strong>Idea 2</strong></p>
+                <p style="font-size:26px;font-weight: bold;">Idea 2</strong></p>
                 <ul>
                   <li>Ut enim ad minim veniam</li>
                   <li>Quis nostrud exercitation ullamco</li>
@@ -78,7 +79,7 @@ p.bold {
                 <button class="continue-btn" data-target="node6" data-arrow="arrow-node6">Continue</button>
             </div>
             <div class="flowchart-node hidden" id="node5">
-                <p><strong>Idea 3</strong></p>
+                <p style="font-size:26px;font-weight: bold";>Idea 3</strong></p>
                 <ul>
                   <li>Proin eget tortor risus</li>
                   <li>Curabitur non nulla sit amet</li>
@@ -87,7 +88,7 @@ p.bold {
             </div>
             <div class="arrow hidden" id="arrow-node6"></div>
             <div class="flowchart-node hidden" id="node6">
-                <p>Conclusion</p>
+                <p style="font-size:26px;font-weight: bold;">Conclusion</p>
             </div>
         </div>
     </div>
