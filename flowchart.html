@@ -11,25 +11,29 @@
 <style>
     body {
     
-    font-family: 'EB Garamond';font-size: 22px;
+    font-family: 'EB Garamond';font-size: 30px;
 }
 h1 {
     font-family: 'EB Garamond';font-size: 40px;
 }
 p{
     font-family: 'EB Garamond';
+    font-size: 22px !important;
+  
    
 }
 ul{
     font-family: 'EB Garamond';
-   
+    font-size: 22px !important;
     padding: 1em;
+    color: #1FBC9C !important;
 }
 li{
     font-family: 'EB Garamond';
 }
-p.bold {
-  font-style: bold;
+p.bigger {
+  font-size: 32px !important;
+  font-weight: 700  !important;
  
 }
 
@@ -48,13 +52,16 @@ p.bold {
         <h1>Interactive Research Flowchart</h1>
         <br>
         <div class="flowchart">
-            <button id="expand-all-btn">Expand All</button>
+            <button id="expand-all-btn" style="background-color: #1FBC9C;">Expand All</button>
+            <br>
+           
 
             
 
 
             <div class="flowchart-node" id="node1">
-                <p style="font-size:26px;font-weight: bold;">I. Introduction</p>
+              
+                <p class="bigger">I. Introduction</p>
                 <p>Technology has become increasingly vital in the nonprofit sector, enhancing the reach of organizations and transforming mission-driven work. According to the Pew Research Center (2013), 92% of nonprofits had a website, and 84% had a social media presence, showing a growing trend of technology adoption in the sector. This research project investigates the use of technology in nonprofit arts organizations, focusing on Avenue 50 Studio, a Latinx community arts nonprofit in Los Angeles.
                 </p>
                 <button class="continue-btn" data-target="node2" data-arrow="arrow-node1" style="text-align: center;">Continue</button>
@@ -65,8 +72,8 @@ p.bold {
 
             <div class="arrow hidden" id="arrow-node1"></div>
             <div class="flowchart-node hidden" id="node2">
-                <p style="font-size:26px;font: weight 700px;;">Who is Avenue 50 Studio?</p>
-                <p>Avenue 50 Studio is a nonprofit organization promoting Latinx artists and fostering intercultural understanding in Los Angeles. Its mission is to bridge cultures through artistic expression, using content-driven art to educate and stimulate intercultural understanding among the diversity of Los Angeles (Avenue 50 Studio). The organization faces various challenges, such as limited resources and the need to continually adapt to changing technologies, while serving a diverse community of artists, patrons, and local residents.
+                <p class="bigger">Who is Avenue 50 Studio?</p>
+                <p >Avenue 50 Studio is a nonprofit organization promoting Latinx artists and fostering intercultural understanding in Los Angeles. Its mission is to bridge cultures through artistic expression, using content-driven art to educate and stimulate intercultural understanding among the diversity of Los Angeles (Avenue 50 Studio). The organization faces various challenges, such as limited resources and the need to continually adapt to changing technologies, while serving a diverse community of artists, patrons, and local residents.
                     <br>
                     <br>
                     The organization aims to support Latinx artists and the community by providing exhibition spaces, workshops, and resources for artistic development. Avenue 50 Studio also plays a crucial role in the community by organizing events, offering educational opportunities, and addressing socioeconomic needs, such as hosting a community pantry and a vaccination site. By doing so, they strive to make a lasting impact on the community they serve.
@@ -82,24 +89,24 @@ p.bold {
                
             </div>
             <div class="flowchart-node hidden" id="node3">
-                <p style="font-size:26px;font-weight: bold;">Research Objectives
+                <p class="bigger">Research Objectives
                 </p>
-                <p >
-                    <ul style="color: #1FBC9C;">
+               
+                    <ul style="color: #1FBC9C;" >
                         <li>Investigate technology use in nonprofits and its impact on mission-driven work.
                         </li>
                         <li>Analyze Avenue 50 Studio's technology utilization compared to experts in the industry.
                         </li>
                         <li>Recommend improvements or new technologies to support its mission.</li>
-                      </ul>
-                </p>
+                    </ul>
+               
                 <button class="continue-btn" data-target="node4" data-arrow="arrow-node4">Continue</button>
             </div>
 
             <div class="arrow hidden" id="arrow-node4"></div>
 
             <div class="flowchart-node hidden" id="node4">
-                <p style="font-size:26px;font-weight: bold;">II. Literature Review
+                <p class="bigger">II. Literature Review
 
                 </p>
                 <p >
@@ -114,7 +121,7 @@ p.bold {
 
 
             <div class="flowchart-node hidden" id="node5">
-                <p style="font-size:26px;font-weight: bold;">A. Strategic Use of Information Technology
+                <p class="bigger">A. Strategic Use of Information Technology
                 </p>
               <p>
                 Hackler and Saxton (2007) identified six key strategic organizational competencies essential for enhancing nonprofit IT capacity, emphasizing the need for support in utilizing and evaluating IT. They noted, "Nonprofits need to develop IT management, funding, and leadership capacity" (p. 433). These competencies can guide organizations like Avenue 50 Studio in the strategic use of technology, ensuring that they maximize the potential benefits of their IT investments.
@@ -122,7 +129,7 @@ p.bold {
                
             </div>
             <div class="flowchart-node hidden" id="node6">
-                <p style="font-size:26px;font-weight: bold;">B. Social Media, Mobility, Analytics, and Cloud Computing
+                <p class="bigger">B. Social Media, Mobility, Analytics, and Cloud Computing
                </p>
               <p>
                 Raman (2016) investigated the adoption and effectiveness of SMAC technologies in nonprofit organizations, finding benefits in communication, mobility, and analytics, but cautioning against unsuitable cloud computing options. Raman states, "SMAC technologies can provide nonprofits with cost-effective and efficient solutions to support their mission-driven activities" (p. 107). This research suggests that Avenue 50 Studio should carefully consider the adoption of SMAC technologies to enhance their digital presence and operations while being mindful of potential drawbacks.
@@ -130,7 +137,7 @@ p.bold {
                
             </div>
             <div class="flowchart-node hidden" id="node7">
-                <p style="font-size:26px;font-weight: bold";>C. Nonprofit Advocacy and Online Presence
+                <p class="bigger";>C. Nonprofit Advocacy and Online Presence
                 </strong></p>
               <p>
                 Guo and Saxton (2014) explored the role of technology and online presence in nonprofit advocacy, highlighting the potential of websites and social media in advocacy efforts and communication. They argue that "nonprofit organizations can leverage online tools to strengthen their advocacy capacity" (p. 56). Avenue 50 Studio can leverage these tools to strengthen its online presence and engage with its community, ensuring that its message reaches a wider audience.
@@ -140,7 +147,7 @@ p.bold {
             </div>
 
             <div class="flowchart-node hidden" id="node8">
-                <p style="font-size:26px;font-weight: bold";>D. Online Multichannel Strategies
+                <p class="bigger";>D. Online Multichannel Strategies
                 </strong></p>
                <p>
                 Kapin and Sample Ward (2013) emphasized the importance of implementing online multichannel strategies for advocacy, fundraising, and community engagement, integrating both online and offline interactions for maximum impact. They suggest that "a successful multichannel approach requires a strategic combination of online and offline tactics" (p. 45). Adopting such strategies can help Avenue 50 Studio effectively reach and engage with its target audience, maximizing the potential of its digital platforms.
@@ -149,7 +156,7 @@ p.bold {
                 
             </div>
             <div class="flowchart-node hidden" id="node9">
-                <p style="font-size:26px;font-weight: bold";>E. The Impact of Neoliberalism on the Nonprofit Sector
+                <p class="bigger";>E. The Impact of Neoliberalism on the Nonprofit Sector
                 </strong></p>
               <p>
                 Alexander and Fernandez (2021) critically examine the state of the nonprofit sector in the wake of neoliberalism, discussing how marketization, professionalization, and government regulation have progressively altered nonprofits' capacities to engage the public. The authors suggest that these changes have required organizations to shift from community engagement to establishing organizational legitimacy with funders. However, Alexander and Fernandez also highlight opportunities for nonprofits to counteract these trends by fostering community connections, engaging in deliberative democracy, and ensuring their boards and staff are representatives of the communities they serve. These insights can guide Avenue 50 Studio in navigating the broader socio-economic context, aligning its technology strategies with its commitment to community engagement and representation.
@@ -157,7 +164,7 @@ p.bold {
                
             </div>
             <div class="flowchart-node hidden" id="node10">
-                <p style="font-size:26px;font-weight: bold";>F. Case Study: The Laundromat Project
+                <p class="bigger";>F. Case Study: The Laundromat Project
                 </strong></p>
               <p>
                 The Laundromat Project, a nonprofit arts organization based in New York City, has successfully utilized technology to engage its community, promote its mission, and support its programs (The Laundromat Project). The organization focuses on connecting artists with local communities and creating socially relevant art projects in public spaces, including laundromats, which parallels Avenue 50 Studio's mission of fostering intercultural understanding through artistic expression.
@@ -178,7 +185,7 @@ p.bold {
             <div class="arrow hidden" id="arrow-node11"></div>
 
             <div class="flowchart-node hidden" id="node11">
-                <p style="font-size:26px;font-weight: bold";>III. Avenue 50: Current Technology Infrastructure and Practices
+                <p class="bigger";>III. Avenue 50: Current Technology Infrastructure and Practices
 
 
                 </strong></p>
@@ -191,7 +198,7 @@ p.bold {
             <div class="arrow hidden" id="arrow-node12"></div>
 
             <div class="flowchart-node hidden" id="node12">
-                <p style="font-size:26px;font-weight: bold";>A. Avenue 50 Studio's Mission and Internship Experience
+                <p class="bigger";>A. Avenue 50 Studio's Mission and Internship Experience
 
 
                 </strong></p>
@@ -210,7 +217,7 @@ p.bold {
             <div class="arrow hidden" id="arrow-node13"></div>
 
             <div class="flowchart-node hidden" id="node13">
-                <p style="font-size:26px;font-weight: bold";>IV. Opportunities, Challenges, and Recommendations: Navigating the Technological Landscape in the Nonprofit Arts Sector
+                <p class="bigger";>IV. Opportunities, Challenges, and Recommendations: Navigating the Technological Landscape in the Nonprofit Arts Sector
 
                 </strong></p>
               <p>
@@ -222,7 +229,7 @@ p.bold {
             <div class="arrow hidden" id="arrow-node14"></div>
 
             <div class="flowchart-node hidden" id="node14">
-                <p style="font-size:26px;font-weight: bold";>IV. Opportunities, Challenges, and Recommendations: Navigating the Technological Landscape in the Nonprofit Arts Sector
+                <p class="bigger";>IV. Opportunities, Challenges, and Recommendations: Navigating the Technological Landscape in the Nonprofit Arts Sector
 
                 </strong></p>
               <p>
@@ -234,7 +241,7 @@ p.bold {
             <div class="arrow hidden" id="arrow-node15"></div>
 
             <div class="flowchart-node hidden" id="node15">
-                <p style="font-size:26px;font-weight: bold";>A. Analysis of Current Technology Infrastructure and Practices with Reference to the Evolving Role of Technology
+                <p class="bigger";>A. Analysis of Current Technology Infrastructure and Practices with Reference to the Evolving Role of Technology
 
                 </strong></p>
               <p>
@@ -250,7 +257,7 @@ p.bold {
             <div class="arrow hidden" id="arrow-node16"></div>
 
             <div class="flowchart-node hidden" id="node16">
-                <p style="font-size:26px;font-weight: bold";>B. The Imperative of Technological Adaptability and Effective Content Strategies in the Nonprofit Arts Sector
+                <p class="bigger";>B. The Imperative of Technological Adaptability and Effective Content Strategies in the Nonprofit Arts Sector
 
                 </strong></p>
               <p>
@@ -267,7 +274,7 @@ p.bold {
             <div class="arrow hidden" id="arrow-node17"></div>
 
             <div class="flowchart-node hidden" id="node17">
-                <p style="font-size:26px;font-weight: bold";> Recommendations and Conclusion
+                <p class="bigger";> Recommendations and Conclusion
 
                 </strong></p>
               <p>
@@ -286,7 +293,7 @@ p.bold {
             <div class="arrow hidden" id="arrow-node18"></div>
 
             <div class="flowchart-node hidden" id="node18">
-                <p style="font-size:26px;font-weight: bold";> Avenue 50 Studio's Technology Use and Opportunities for Improvement
+                <p class="bigger";> Avenue 50 Studio's Technology Use and Opportunities for Improvement
 
 
                 </strong></p>
@@ -310,12 +317,12 @@ p.bold {
             <div class="arrow hidden" id="arrow-node19"></div>
 
             <div class="flowchart-node hidden" id="node19">
-                <p style="font-size:26px;font-weight: bold";> My Recommendations for Avenue 50 Studio and Other Arts Organizations</p>
+                <p class="bigger";> My Recommendations for Avenue 50 Studio and Other Arts Organizations</p>
                 <p>
                     Based on the research findings and analysis, the following recommendations are made for Avenue 50 Studio and other arts organizations:
                     <br>
-                    <br>
-                    <ul>
+                 
+                    <ul style="color: #1FBC9C; font: size 20px;">
                         <li>
                             Staying current with technology: Regularly update software applications and invest in staff training to stay abreast of the latest technological advancements. This will enable organizations to remain competitive and optimize their digital outreach efforts.
                         </li>
