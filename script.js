@@ -28,4 +28,21 @@ document.addEventListener('DOMContentLoaded', function() {
     if (firstNode) {
         firstNode.classList.add('visible');
     }
+
+    // Expand All button functionality
+    const expandAllButton = document.getElementById('expand-all-btn');
+    if (expandAllButton) {
+        expandAllButton.addEventListener('click', function() {
+            const allNodes = document.querySelectorAll('.flowchart-node');
+            const allArrows = document.querySelectorAll('.arrow');
+            
+            allNodes.forEach(function(node) {
+                node.classList.add('visible');
+            });
+
+            allArrows.forEach(function(arrow) {
+                arrow.classList.add('visible');
+            });
+        });
+    }
 });
